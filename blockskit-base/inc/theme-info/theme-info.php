@@ -2,6 +2,7 @@
 /**
  * Theme Info Admin Menu
  */
+add_action( 'after_setup_theme', function() {
 if ( ! class_exists( 'Bk_Theme_Info' ) ) {
     class Bk_Theme_Info{
 
@@ -972,21 +973,6 @@ $config = array(
             'pro'  => __( 'yes','blockskit-base' ),
         ),
         array(
-            'desc'=> __( 'Work with the Page Builders', 'blockskit-base' ),
-            'free' => __( 'no','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'Creative & Unique Blocks', 'blockskit-base' ),
-            'free' => __( 'no','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'Elementor Ready', 'blockskit-base' ),
-            'free' => __( 'no','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
             'desc'=> __( 'Priority Updates', 'blockskit-base' ),
             'free' => __( 'no','blockskit-base' ),
             'pro'  => __( 'yes','blockskit-base' ),
@@ -1002,16 +988,6 @@ $config = array(
             'pro'  => __( 'yes','blockskit-base' ),
         ),
         array(
-            'desc'=> __( 'Customize Everything', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'Lighting Fast', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
             'desc'=> __( 'One-click Demo Installer', 'blockskit-base' ),
             'free' => __( 'yes','blockskit-base' ),
             'pro'  => __( 'yes','blockskit-base' ),
@@ -1022,47 +998,12 @@ $config = array(
             'pro'  => __( 'yes','blockskit-base' ),
         ),
         array(
-            'desc'=> __( 'Clean & Optimized Code', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
             'desc'=> __( 'Multiple Site Styles', 'blockskit-base' ),
             'free' => __( 'yes','blockskit-base' ),
             'pro'  => __( 'yes','blockskit-base' ),
         ),
         array(
-            'desc'=> __( 'Global Settings', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'CSS Animation', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'Gutenberg Ready', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
             'desc'=> __( 'eCommerce Ready', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'SEO Optimized', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'Multilingual Compatibility', 'blockskit-base' ),
-            'free' => __( 'yes','blockskit-base' ),
-            'pro'  => __( 'yes','blockskit-base' ),
-        ),
-        array(
-            'desc'=> __( 'RTL/LTR Language Support', 'blockskit-base' ),
             'free' => __( 'yes','blockskit-base' ),
             'pro'  => __( 'yes','blockskit-base' ),
         ),
@@ -1080,3 +1021,4 @@ $config = array(
 );
 
 return new Bk_Theme_Info( $config );
+});

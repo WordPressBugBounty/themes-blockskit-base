@@ -2,7 +2,7 @@
 /**
  * Title: Header Top Info
  * Slug: blockskit-base/header-top-info
- * Categories: all, header
+ * Categories: theme
  */
 $blockskit_base_images = array(
 BLOCKSKIT_BASE_URL . 'assets/images/info-img1.png',

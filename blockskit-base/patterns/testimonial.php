@@ -2,7 +2,7 @@
 /**
  * Title: Testimonial
  * Slug: blockskit-base/testimonial
- * Categories: all, testimonials
+ * Categories: theme
  * Keywords: testimonial
  */
 $blockskit_base_images = array(

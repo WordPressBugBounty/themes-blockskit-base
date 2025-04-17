@@ -96,6 +96,7 @@ require get_theme_file_path( '/inc/core/init.php' );
 /**
  * Theme info
  */
+
 require get_theme_file_path( '/inc/theme-info/theme-info.php' );
 
 /**

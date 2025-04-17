@@ -2,7 +2,7 @@
 /**
  * Title: Header Home
  * Slug: blockskit-base/header-home
- * Categories: all, header
+ * Categories: theme
  */
 ?>
 

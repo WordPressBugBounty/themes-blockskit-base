@@ -2,7 +2,7 @@
 /**
  * Title: Header Minimal
  * Slug: blockskit-base/header-minimal
- * Categories: all, header
+ * Categories: theme
  */
 ?>
 

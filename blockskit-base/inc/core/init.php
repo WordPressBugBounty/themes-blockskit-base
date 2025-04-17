@@ -2,5 +2,7 @@
 /**
  * Initiate core files
  */
-include 'block-patterns.php';
-include 'block-styles.php';
+add_action( 'after_setup_theme', function() {
+	include get_template_directory() . '/inc/core/block-patterns.php';
+	include get_template_directory() . '/inc/core/block-styles.php';
+});

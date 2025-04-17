@@ -2,7 +2,7 @@
 /**
  * Title: Header
  * Slug: blockskit-base/header
- * Categories: all, header
+ * Categories: theme
  */
 ?>
 <!-- wp:group {"className":"bk-header-transparent","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->

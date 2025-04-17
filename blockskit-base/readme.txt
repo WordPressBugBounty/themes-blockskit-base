@@ -3,7 +3,7 @@ Contributors: blockskitdev
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, threaded-comments, translation-ready, wide-blocks, block-styles, blog, portfolio, education
 Requires at least: 6.0
 Requires PHP: 5.6
-Tested up to: 6.6
+Tested up to: 6.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,6 +20,9 @@ Blockskit Base is a modern and versatile WordPress theme designed for various ty
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.1.3 =
+* Early translation error notification has been resolved.
 
 = 1.1.2 =
 * Contact Form 7 compatibility added.
@@ -65,7 +68,7 @@ Blockskit Base is a modern and versatile WordPress theme designed for various ty
 
 == Copyright ==
 
-Blockskit Base WordPress Theme, Copyright 2024 BlockskitDev
+Blockskit Base WordPress Theme, Copyright 2025 BlockskitDev
 Blockskit Base is distributed under the terms of the GNU General Public License v3
 
 This program is free software: you can redistribute it and/or modify

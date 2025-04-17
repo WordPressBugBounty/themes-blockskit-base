@@ -2,7 +2,7 @@
  /**
   * Title: Primary Sidebar
   * Slug: blockskit-base/primary-sidebar
-  * Categories: all
+  * Categories: theme
   */
 ?>
 

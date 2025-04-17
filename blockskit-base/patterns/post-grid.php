@@ -2,7 +2,7 @@
 /**
  * Title: Post Grid
  * Slug: blockskit-base/post-grid
- * Categories: all, posts
+ * Categories: theme
  * Keywords: post grid
  */
 ?>

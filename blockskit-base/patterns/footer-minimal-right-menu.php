@@ -2,7 +2,7 @@
 /**
  * Title: Footer Minimal Right Menu
  * Slug: blockskit-base/footer-minimal-right-menu
- * Categories: all, footer
+ * Categories: theme
  */
 ?>
 

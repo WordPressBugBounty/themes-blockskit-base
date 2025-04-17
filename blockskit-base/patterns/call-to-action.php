@@ -2,7 +2,7 @@
 /**
  * Title: Call To Action
  * Slug: blockskit-base/call-to-action
- * Categories: all, callback
+ * Categories: theme
  * Keywords: call to action
  */
 ?>

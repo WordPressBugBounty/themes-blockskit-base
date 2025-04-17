@@ -2,7 +2,7 @@
  /**
   * Title: Sidebar Shop
   * Slug: blockskit-base/sidebar-shop
-  * Categories: all
+  * Categories: theme
   */
 ?>
 

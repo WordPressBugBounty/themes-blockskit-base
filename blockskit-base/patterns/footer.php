@@ -2,7 +2,7 @@
 /**
  * Title: Footer
  * Slug: blockskit-base/footer
- * Categories: all, footer
+ * Categories: theme
  */
 ?>
 <!-- wp:cover {"dimRatio":80,"overlayColor":"surface","minHeight":50,"isDark":false,"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large","right":"0","left":"0"}}}} -->

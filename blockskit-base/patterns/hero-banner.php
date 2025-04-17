@@ -2,7 +2,7 @@
 /**
  * Title: Hero Banner
  * Slug: blockskit-base/hero-banner
- * Categories: all, banner
+ * Categories: theme
  * Keywords: hero banner
  */
 $blockskit_base_images = array(

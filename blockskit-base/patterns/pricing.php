@@ -2,7 +2,7 @@
 /**
  * Title: Pricing
  * Slug: blockskit-base/pricing
- * Categories: all, pricing
+ * Categories: theme
  * Keywords: pricing
  */
 ?>

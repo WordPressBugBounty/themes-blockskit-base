@@ -2,7 +2,7 @@
 /**
  * Title: Three Columns Featured
  * Slug: blockskit-base/three-columns-featured
- * Categories: all, featured
+ * Categories: theme
  * Keywords: three columns featured
  */
 $blockskit_base_images = array(
