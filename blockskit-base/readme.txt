@@ -21,6 +21,9 @@ Blockskit Base is a modern and versatile WordPress theme designed for various ty
 
 == Changelog ==
 
+= 1.1.4 =
+* Block spacing nullify style has been added to the home template.
+
 = 1.1.3 =
 * Early translation error notification has been resolved.
 
