@@ -251,6 +251,25 @@
         }
       ]
     },
+    "shadow": {
+      "presets": [
+        {
+          "name": "Soft",
+          "slug": "soft",
+          "shadow": "0px 0px 50px 0px rgba(0, 0, 0, 0.05)"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "shadow": "0px 10px 40px -10px rgba(0, 0, 0, 0.15)"
+        },
+        {
+          "name": "Bold",
+          "slug": "bold",
+          "shadow": "10px 10px 0px 0px rgba(0, 0, 0, 0.3)"
+        }
+      ]
+    },
     "custom": {
       "fontWeight": {
         "black": 900,
@@ -471,6 +490,15 @@
           "fluid": {
             "min": "36px",
             "max": "48px"
+          }
+        },
+        {
+          "name": "XXX Large Ext",
+          "size": "clamp(48px, 6vw, 60px)",
+          "slug": "xxx-large-ext",
+          "fluid": {
+            "min": "48px",
+            "max": "60px"
           }
         },
         {

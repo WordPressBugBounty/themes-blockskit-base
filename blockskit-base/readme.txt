@@ -3,7 +3,7 @@ Contributors: blockskitdev
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, threaded-comments, translation-ready, wide-blocks, block-styles, blog, portfolio, education
 Requires at least: 6.0
 Requires PHP: 5.6
-Tested up to: 6.8
+Tested up to: 6.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,6 +20,15 @@ Blockskit Base is a modern and versatile WordPress theme designed for various ty
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.1.7 =
+* CF7 plugin recommended.
+
+= 1.1.6 =
+* New custom font size added.
+
+= 1.1.5 =
+* Shadow styles have been added.
 
 = 1.1.4 =
 * Block spacing nullify style has been added to the home template.

@@ -292,7 +292,7 @@ if ( ! class_exists( 'Bk_Theme_Info' ) ) {
                         echo '<div class="col-items">';
                         
                         if( $is_gs ) {
-                            if ( is_plugin_active( 'blockskit/blockskit.php' ) && is_plugin_active( 'advanced-import/advanced-import.php' ) ) {
+                            if ( is_plugin_active( 'blockskit/blockskit.php' ) && is_plugin_active( 'advanced-import/advanced-import.php' ) && is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
                                 echo ('<h3>'.esc_html__( 'Getting Started', 'blockskit-base' ).'</h3>');
                                 echo ('<p>'.esc_html__( 'Essential plugins are added successfully.', 'blockskit-base' ).'</p>');
                             echo '</div>';
@@ -1016,6 +1016,9 @@ $config = array(
         ),
         'Advanced Import' => array(
             'slug' => 'advanced-import'
+        ),
+        'Advanced Import' => array(
+            'slug' => 'contact-form-7'
         ),
     ),
 );

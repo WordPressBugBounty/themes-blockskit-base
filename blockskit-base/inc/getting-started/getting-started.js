@@ -53,9 +53,27 @@ jQuery( document ).ready( function($) {
                             request : 2
                         },
                         success:function( response ) {
-                            var extra_uri, redirect_uri, dismiss_nonce;
-                            redirect_uri         = bk_adi_install.adminurl+'/themes.php?page=advanced-import&browse=all';
-                            window.location.href = redirect_uri;
+                            setTimeout( function(){
+                                $.ajax({
+                                    type: "POST",
+                                    url: ajaxurl,
+                                    data: {
+                                        action : 'bk_getting_started',
+                                        security : bk_adi_install.nonce,
+                                        slug : 'contact-form-7',
+                                        main_file : 'wp-contact-form-7',
+                                        request : 3
+                                    },
+                                    success:function( response ) {
+                                        var extra_uri, redirect_uri, dismiss_nonce;
+                                        redirect_uri         = bk_adi_install.adminurl+'/themes.php?page=advanced-import&browse=all';
+                                        window.location.href = redirect_uri;
+                                    },
+                                    error: function( xhr, ajaxOptions, thrownError ){
+                                        console.log( thrownError );
+                                    }
+                                });
+                            }, 500);
                         },
                         error: function( xhr, ajaxOptions, thrownError ){
                             console.log( thrownError );

@@ -33,10 +33,10 @@ class Bk_Notice_Handler {
 
     public static $nonce;
 
-	/**
-	 * Empty Constructor
-	 */
-	public function __construct() {  
+    /**
+     * Empty Constructor
+     */
+    public function __construct() {  
         /* activation notice */
         add_action( 'switch_theme', array( $this, 'flush_dismiss_status' ) );
         add_action( 'admin_init', array($this,'getting_started_notice_dismissed' ) );
@@ -51,10 +51,10 @@ class Bk_Notice_Handler {
         $theme = wp_get_theme();
         if ( is_admin() && !get_user_meta( get_current_user_id(), 'gs_notice_dismissed' ) ){
             echo '<div class="updated notice notice-success is-dismissible getting-started">';
-            if ( is_plugin_active( 'blockskit/blockskit.php' ) && is_plugin_active( 'advanced-import/advanced-import.php' ) ) {
+            if ( is_plugin_active( 'blockskit/blockskit.php' ) && is_plugin_active( 'advanced-import/advanced-import.php' ) && is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
                 echo ('<div class="fs-notice success"><p>'.esc_html__( 'Essential plugins are added successfully. You may dismiss this notice now.', 'blockskit-base' ).'</p></div>');
             }else{
-            echo ( '<p><strong>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s.', 'blockskit-base' ), esc_html( $theme->get( 'Name' ) ) ) . '</strong></p><p class="plugin-notice">'.esc_html__( 'By clicking "Get Started," you will install and activate Blockskit & Advanced Import plugins to prepare your demo import.', 'blockskit-base' ).'</p><p><a href="#" class="bk-install-plugins button button-primary">' . sprintf( esc_html__( 'Get started with %s','blockskit-base' ), esc_html( $theme->get( 'Name' ) ) ) . '</a></p>' );
+            echo ( '<p><strong>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s.', 'blockskit-base' ), esc_html( $theme->get( 'Name' ) ) ) . '</strong></p><p class="plugin-notice">'.esc_html__( 'By clicking "Get Started," you will install and activate Blockskit, Advanced Import & Contact Form 7 plugins to prepare your demo import.', 'blockskit-base' ).'</p><p><a href="#" class="bk-install-plugins button button-primary">' . sprintf( esc_html__( 'Get started with %s','blockskit-base' ), esc_html( $theme->get( 'Name' ) ) ) . '</a></p>' );
             }
             echo '<a href="' . esc_url( wp_nonce_url( add_query_arg( 'gs-notice-dismissed', 'dismiss_admin_notices' ) ) ) . '" class="getting-started-notice-dismiss">Dismiss</a>';
             echo '</div>';
@@ -80,14 +80,14 @@ class Bk_Notice_Handler {
         delete_user_meta( get_current_user_id(), 'gs_notice_dismissed', 'true' );
     }
 
-	/**
-	 * Get Started Notice
-	 * Active callback of wp_ajax
-	 * return void
-	 */
-	public function bk_getting_started() {
+    /**
+     * Get Started Notice
+     * Active callback of wp_ajax
+     * return void
+     */
+    public function bk_getting_started() {
 
-		check_ajax_referer( 'bk_demo_import_nonce', 'security' );
+        check_ajax_referer( 'bk_demo_import_nonce', 'security' );
 
         $slug   = $_POST['slug'];
         $plugin = $slug.'/'.$slug.'.php';
@@ -114,7 +114,7 @@ class Bk_Notice_Handler {
             wp_send_json_error( $status );
         }
 
-        if( $request > 2 ){
+        if( $request > 3 ){
             wp_send_json_error( );
         }
 
@@ -126,6 +126,9 @@ class Bk_Notice_Handler {
             wp_send_json_error( );
         }
         if( $request == 2 && strpos( $slug, 'blockskit' ) === false ){
+            wp_send_json_error( );
+        }
+        if( $request == 3 && strpos( $slug, 'contact' ) === false ){
             wp_send_json_error( );
         }
         if ( file_exists( WP_PLUGIN_DIR . '/' . $slug ) ) {
@@ -211,6 +214,6 @@ class Bk_Notice_Handler {
         }
 
         wp_send_json_success( $status );
-	}
+    }
 }
 new Bk_Notice_Handler;
